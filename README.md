@@ -11,7 +11,7 @@ Make sure following software is installed on your PC
 ## Project structure
 ```
 .
-├── hello-world
+├── chain-of-responsibility-pattern
 │   ├── pom.xml
 │   ...
 ├── pom.xml
@@ -23,13 +23,10 @@ Make sure following software is installed on your PC
 
 ```shell
 $ ./mvnw clean package
-$ java -jar ./hello-world/target/hello-world-0.0.1-SNAPSHOT.jar
-```
-
-```shell
-Compare str1==str2: true
-Compare str3==str4: false
-Compare value str1.equals(str3): true
+$ java -jar ./chain-of-responsibility-pattern/target/chain-of-responsibility-pattern-0.0.1-SNAPSHOT.jar
+13:50:52.009 [main] INFO io.github.huypva.chainofresponsibilitypattern.Concrete1Handler -- Concrete1Handler handle request: Concrete1 request
+13:50:52.012 [main] INFO io.github.huypva.chainofresponsibilitypattern.Concrete2Handler -- Concrete2Handler handle request: Concrete2 request
+13:50:52.012 [main] INFO io.github.huypva.chainofresponsibilitypattern.BaseHandler -- No handler can handle request: Concrete3 request
 ```
 
 ## Contribute
@@ -43,3 +40,4 @@ The code is open sourced. I encourage fellow developers to contribute and help i
 - Create new Pull Request
 
 ## Reference
+- https://refactoring.guru/design-patterns/chain-of-responsibility
